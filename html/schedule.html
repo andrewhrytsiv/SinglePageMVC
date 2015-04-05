@@ -1,0 +1,63 @@
+  <div id="schedule_container" >
+ 		<h1>Synchronization</h1>
+ 		<div id="schedule_synchronization_box">
+ 			<div class="synchronization_box">
+ 				<span class="synchronization_text">last synchronization: </span>
+ 			</div>
+ 			<div class="synchronization_box">
+ 				<span id="last_synchronization_date" class="synchronization_text"></span>
+ 			</div>
+ 			<button id="sync_button" class="synchronization_box">Sync now</button>
+ 			<div id="progress_bar_box" class="synchronization_box">
+ 				<div id="progress_bar"></div>
+ 			</div>
+ 		</div><!--schedule_synchronization_box-->
+
+    <div id="sync_mode_container">
+      <div class="sync_mode_float">Sync Mode:</div>
+      <select id="select_scheduled" class="sync_mode_float" onchange="app.eventHandler(event)">
+        <option selected value="scheduled">scheduled</option>
+        <option>default</option>
+      </select>
+      <div id="schedule_box" class="sync_mode_float">
+        <div><span class="schedule_box_text"><b>Schedule</b></span></div>
+        <div id="schedule_date_box">
+          <div id="schedule_radio_box"><br>
+            <input type="radio" name="radio_group" value="daily"> daily<br>
+            <input type="radio" name="radio_group" value="weekly" checked> weekly<br>
+            <input type="radio" name="radio_group" value="monthly"> monthly<br>
+          </div><!--schedule_radio_box-->
+          <div id="schedule_checkbox_box">
+            <div id="schedule_checkbox_header">
+              <div class="checkbox_header_float">every</div>
+              <input class="checkbox_header_float" type="text" value="1" size="1">
+              <div class="checkbox_header_float">week each</div>
+            </div><!--schedule_checkbox_header-->
+            <div id="schedule_checkbox_body">
+              <input class="checkbox_body_style" type="checkbox" name="checkbox_group" value="Monday"/>Monday&nbsp;&nbsp;
+              <input class="checkbox_body_style" type="checkbox" name="checkbox_group" value="Tuesday"/>Tuesday
+              <input class="checkbox_body_style" type="checkbox" name="checkbox_group" value="Wednesday"/>Wednesday <br>
+              <input class="checkbox_body_style" type="checkbox" name="checkbox_group" value="Thursday"/>Thursday
+              <input class="checkbox_body_style" type="checkbox" name="checkbox_group" value="Friday"/>Friday&nbsp;&nbsp;&nbsp;
+              <input class="checkbox_body_style" type="checkbox" name="checkbox_group" value="Saturday"/>Saturday <br>
+              <input class="checkbox_body_style" type="checkbox" name="checkbox_group" value="Sunday"/>Sunday
+            </div><!--schedule_checkbox_body-->
+          </div><!--schedule_checkbox_box-->
+        </div><!--schedule_date_box-->
+      </div><!--schedule_box-->
+    </div><!--sync_mode_container-->
+
+ 		<div id="sync_journal_box">
+ 			<h1>Sync Journal</h1>
+ 			<div id="sync_journal_container">
+ 				<table id="sync_journal_table">
+  					<tr>
+    					<th class="sync_journal_header"> Date </th>
+    					<th class="sync_journal_header"> State </th> 
+    					<th class="sync_journal_header"> Conflict </th>
+    					<th class="sync_journal_header"> synch_elements </th>
+  					</tr>
+				</table>
+ 			</div>
+ 		</div><!--sync_journal_box-->
+ 	</div>

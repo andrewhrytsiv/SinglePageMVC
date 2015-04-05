@@ -1,0 +1,104 @@
+#schedule_container{
+	width: 1300px;
+	height: 500px;
+}
+
+#schedule_synchronization_box{
+	/*background-color: yellow;*/
+	height: 50px;
+}
+.synchronization_box{
+	float: left;
+	background-color: white;
+	margin-left: 50px;
+	
+}
+.synchronization_text{
+	font-size: 16px;
+    font-family: "Myriad Pro";
+    line-height: 2.083;
+	text-align: center;
+}
+#sync_button{
+	margin-top: 5px;
+	margin-left: 200px;
+	font-size: 16px;
+    font-family: "Myriad Pro";
+}
+#progress_bar_box{
+	margin-top: 6px;
+	width: 160px;
+	height: 20px;
+	border: 1px solid black;
+	visibility: hidden;
+}
+#progress_bar{
+	background-color: green;
+	width: 160px;
+	height: 20px;
+	text-align: center;
+}
+#sync_journal_box{
+	/*background-color: yellow;*/
+	height: 450px;
+}
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+.sync_journal_header{
+	background-color: grey;
+}
+tr:hover{
+	background-color: cyan;
+}
+#sync_mode_container{
+	width: 1100px;
+	height: 200px;
+}
+.sync_mode_float{
+	float:left;
+	margin-left: 50px;
+	margin-right: 34px;
+}
+#schedule_box{
+	height:200px;
+	width: 560px;
+	border: 2px solid black;
+}
+#schedule_date_box{
+	width: 560px;
+	height:160px;
+}
+.schedule_box_text{
+	font-size: 16px;
+    font-family: "Myriad Pro";
+    line-height: 2.083;
+}
+#schedule_radio_box{
+	height:160px;
+	width: 150px;
+	border-right: 2px solid black;
+	float: left;
+}
+#schedule_checkbox_box{
+	height:160px;
+	width: 405px;
+	float: left;
+}
+#schedule_checkbox_header{
+	height:30px;
+	width: 405px;
+}
+.checkbox_header_float{
+	float: left;
+	margin-left: 25px;
+}
+#schedule_checkbox_body{
+	height:130px;
+	width: 405px;
+}
+.checkbox_body_style{
+	margin-left: 25px; 
+	margin-top: 10px;
+}

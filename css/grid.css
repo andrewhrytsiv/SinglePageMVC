@@ -1,0 +1,31 @@
+#grid_container{
+	height: 400px;
+	width: 525px;
+	margin-top: 25px;
+	margin-left: 250px;
+}
+.grid_box{
+	height: 130px;
+	width: 100px;
+	float: left;
+	margin-top: 25px;
+	margin-left: 25px;
+
+}
+.grid_box_image{
+	height: 100px;
+	width: 100px;
+	border: 1px solid;
+	background-image: url(../images/group.png);*/
+}
+.grid_box_image:hover{
+	border: 2px solid yellow;
+}
+.grid_box_text{
+	height: 30px;
+	width: 100px;
+	font-size: 16px;
+    font-family: "Myriad Pro";
+    line-height: 2.083;
+	text-align: center;
+}
